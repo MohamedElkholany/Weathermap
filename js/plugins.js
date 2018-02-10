@@ -8,7 +8,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
-            center: {lat: -25.363882, lng: 131.044922 }
+            center: {lat: 30.981719899999998, lng: 31.161774200000004 }
         });
     if ($('table').length == 1) {
       if (previousMarker) { previousMarker.setMap(null);} 
