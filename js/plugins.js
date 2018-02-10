@@ -57,6 +57,8 @@ if (navigator.geolocation) {
     handleLocationError(true, infoWindow, map.getCenter());
   });
  } else {
+  $('#lat').val('30.981719899999998');
+  $('#lng').val('31.161774200000004');
   handleLocationError(false, infoWindow, map.getCenter());
 }
 }
