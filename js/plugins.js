@@ -5,10 +5,13 @@ var map, infoWindow, previousMarker, geocoder, pos;
 function initMap() {
     infoWindow = new google.maps.InfoWindow;
     geocoder   = new google.maps.Geocoder ;
-
+    var lat0   =30.981719899999998,
+        lng0   =31.161774200000004;
+    $('#lat').val(lat0);
+    $('#lng').val(lng0);
     var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
-            center: {lat: 30.981719899999998, lng: 31.161774200000004 }
+            center: {lat: lat0, lng: lng0 }
         });
     if ($('table').length == 1) {
       if (previousMarker) { previousMarker.setMap(null);} 
@@ -57,8 +60,7 @@ if (navigator.geolocation) {
     handleLocationError(true, infoWindow, map.getCenter());
   });
  } else {
-  $('#lat').val('30.981719899999998');
-  $('#lng').val('31.161774200000004');
+  
   handleLocationError(false, infoWindow, map.getCenter());
 }
 }
