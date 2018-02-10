@@ -1,0 +1,185 @@
+      *{
+        font-family: sans-serif;
+      }
+      h1,label,td,th,input,a,span{
+        font-family: 'Lobster', cursive;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+      }
+      .table-bordered {
+          border: 2px solid #000;
+          background: #fff;
+      }    
+      #postion{
+        width: 100%;
+        font-size: xx-large;
+      }
+      #map {
+        height: 70%;
+        width: 100%
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #8F8DE4
+      }
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 11px;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+      h1{
+        font-size: 4em;
+        font-weight: bold;
+        margin: 30px 0; 
+        color: #fff;
+        text-shadow: 0 2px 7px #D0C;
+        -webkit-text-shadow: 0 2px 7px #D0C;
+        -moz-text-shadow: 0 2px 7px #D0C;
+        -o-text-shadow: 0 2px 7px #D0C;
+      }
+      h1>span{
+        font-family: sans-serif;
+        text-transform: capitalize;
+      }
+      form{
+        margin-top: 25px;
+        margin-bottom: 30px;
+        border: 2px groove #7471B8;
+        padding: 7px 26px 44px;
+      }
+      .row{
+        margin-top: 20px;
+      }
+      .btn{
+        font-size: 1.2em
+      }
+      .footer-bottom {
+          border-top: 1px solid #666;
+          background: #1e1e1e;
+          margin-top: 86px;
+          margin-bottom: 0;      
+      }
+      .copyright-text p {
+          color: #ccc;
+          margin-top: 9px;
+          margin-bottom: 0;
+          font-size: 1.2em
+      }
+      .social-link li {
+          display: inline-block;
+          margin: 0 5px;
+      }
+      .social-link li a {
+          color: #ccc;
+          border: 1px solid #ccc;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          display: inline-block;
+          font-size: 22px;
+          transition: .5s;
+      }
+      label{
+        font-size: 1.3em;
+        color: #fff !important;
+        line-height: 3.1em;
+
+      }
+      th{
+        text-align: center;
+        font-size: 1.4em;
+        text-transform: capitalize;
+      }
+      td{
+        vertical-align: middle !important;
+        font-size: 1.2em;
+        text-transform: capitalize;
+        letter-spacing: 1px
+      }
+      strong a{
+        color: #ccc;
+      }
+      strong a:hover{
+        color: #eee;
+        text-decoration: none;
+
+      }      
+      .deg{
+        color: #88C4EC;
+        font-weight: bold;
+      }
+      .btn-primary:hover {
+        background-color: #3c3b8c !important;
+        border-color: #204d74;
+    }
+    #map{
+      font-family: sans-serif !important  ;
+    }
