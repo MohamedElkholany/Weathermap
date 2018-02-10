@@ -5,19 +5,25 @@ var map, infoWindow, previousMarker, geocoder, pos;
 function initMap() {
     infoWindow = new google.maps.InfoWindow;
     geocoder   = new google.maps.Geocoder ;
+    if (parseFloat($('#lat').attr('value')) > 0 || parseFloat($('#lng').attr('value')) > 0) {
+          lat0 = parseFloat($('#lat').attr('value'));
+          lng0 = parseFloat($('#lng').attr('value'));
+    }else{
     var lat0   =30.981719899999998,
         lng0   =31.161774200000004;
-    $('#lat').val(lat0);
-    $('#lng').val(lng0);
+    }
+    $('#lat').attr('value',lat0);
+    $('#lng').attr('value',lng0);
     var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
             center: {lat: lat0, lng: lng0 }
         });
+
     if ($('table').length == 1) {
       if (previousMarker) { previousMarker.setMap(null);} 
         pos = {
-          lat: parseInt($('#lat').val()),
-          lng: parseInt($('#lng').val())          
+          lat: parseFloat($('#lat').val()),
+          lng: parseFloat($('#lng').val())          
         }
         
         placeMarkerAndPanTo(pos, map);
@@ -60,8 +66,8 @@ if (navigator.geolocation) {
     handleLocationError(true, infoWindow, map.getCenter());
   });
  } else {
-  
   handleLocationError(false, infoWindow, map.getCenter());
+
 }
 }
 
